@@ -1,0 +1,132 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800&display=swap");
+
+/* Reset CSS */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Global Styles */
+body {
+  font-family: "Poppins", sans-serif;
+}
+
+.container {
+  height: 90vh;
+  width: 90vw;
+  margin: 2rem auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid;
+  box-shadow: 2px 2px 20px;
+  border-radius: 10px;
+}
+
+.card {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 1rem;
+  gap: 1rem;
+}
+
+.image {
+  flex: 1;
+}
+
+.image img {
+  max-width: 100%; /* Ensure image doesn't exceed container */
+}
+
+.info {
+  margin-left: 1.5rem;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  padding: 0rem 2rem;
+  max-width: 100%;
+
+  flex: 1;
+}
+
+.productName {
+  margin-bottom: 0.5rem;
+}
+
+.name {
+  display: flex;
+  align-items: center;
+}
+
+.name span {
+  background-color: #2074f5;
+  border-radius: 0.5rem;
+  padding: 3px 10px 3px 10px;
+  font-size: 20px;
+  font-weight: 500;
+  margin-left: 5px;
+  color: white;
+}
+.productName h2 {
+  font-size: 1.5rem;
+  font-weight: 500;
+}
+
+.description p {
+  font-weight: 300;
+  /* width: 50%; */
+  margin-bottom: 0.5rem;
+}
+
+.description h3,
+.storage-description h3 {
+  font-weight: 600;
+  margin-bottom: 0.5rem;
+}
+
+.storage-description span {
+  border: 2px solid;
+  height: 40px;
+  width: 80px;
+  display: inline-block;
+  background-color: #eeeeee;
+  text-align: center;
+  padding-top: 0.7rem;
+  border-radius: 10px;
+  margin-right: 1rem;
+  border: none;
+}
+
+.storage-description span:nth-child(2) {
+  background-color: #2074f5;
+  color: white;
+}
+
+.buy-price {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 1rem;
+}
+
+.buy-price a {
+  padding: 11px 16px;
+  background-color: #2074f5;
+  text-decoration: none;
+  color: white;
+  white-space: nowrap;
+  font-size: 1.1rem;
+  font-weight: 300;
+  border-radius: 10px;
+}
+
+.buy-price a::before {
+  content: "";
+  mask: url(./shopping_cart_FILL0_wght400_GRAD0_ops) no-repeat 50% 50%;
+  -webkit-mask-size: cover;
+  mask-size: cover;
+  margin-right: 1rem;
+  padding-right: 1.5rem;
+  background-color: white;}
